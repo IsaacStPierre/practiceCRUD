@@ -41,6 +41,10 @@ const update = (req, res) => {
 const add = (req, res) => {
     console.log('Working on post request for posts')
 
+    //look at req.body.author_id
+        //if it exists, submit post req
+        //if not, create author using 
+
     knex('posts')
     .insert({
         descrption: req.body.description,
